@@ -1,0 +1,11 @@
+
+java_library(
+  name = "lib",
+  srcs = glob(["src/com/google/common/geometry/*.java"]),
+  deps = [
+    "//external:google_guava",
+    "//external:javax_nullable",
+  ],
+  visibility = ["//visibility:public"],
+)
+
